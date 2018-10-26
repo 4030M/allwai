@@ -68,7 +68,7 @@ var ServerID = "494264528461365249";
 var ChannelID = "505109682592022538";
 client.on('warn', console.warn);
 client.on('error', console.error);
-client.on('ready', () => console.log('2 spam bot is ready!'));
+client.on('ready', () => console.log('3 spam bot is ready!'));
 function timerFunc() {
   client.on('message', msg => {
       client.guilds.get(ServerID).channels.get(ChannelID); return 
@@ -100,4 +100,4 @@ client.on('message', message => {
   }
  });
 
-client.login(process.env.BOT_TOKEN2);
+client.login(process.env.BOT_TOKEN3);
