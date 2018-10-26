@@ -1268,7 +1268,7 @@ var ServerID = "494264528461365249";
 var ChannelID = "505109682592022538";
 client.on('warn', console.warn);
 client.on('error', console.error);
-client.on('ready', () => console.log('25 spam bot is ready!'));
+client.on('ready', () => console.log('26 spam bot is ready!'));
 function timerFunc() {
   client.on('message', msg => {
       client.guilds.get(ServerID).channels.get(ChannelID); return 
@@ -1318,7 +1318,7 @@ var ServerID = "494264528461365249";
 var ChannelID = "505109682592022538";
 client.on('warn', console.warn);
 client.on('error', console.error);
-client.on('ready', () => console.log('25 spam bot is ready!'));
+client.on('ready', () => console.log('27 spam bot is ready!'));
 function timerFunc() {
   client.on('message', msg => {
       client.guilds.get(ServerID).channels.get(ChannelID); return 
@@ -1368,7 +1368,7 @@ var ServerID = "494264528461365249";
 var ChannelID = "505109682592022538";
 client.on('warn', console.warn);
 client.on('error', console.error);
-client.on('ready', () => console.log('25 spam bot is ready!'));
+client.on('ready', () => console.log('28 spam bot is ready!'));
 function timerFunc() {
   client.on('message', msg => {
       client.guilds.get(ServerID).channels.get(ChannelID); return 
@@ -1418,7 +1418,7 @@ var ServerID = "494264528461365249";
 var ChannelID = "505109682592022538";
 client.on('warn', console.warn);
 client.on('error', console.error);
-client.on('ready', () => console.log('25 spam bot is ready!'));
+client.on('ready', () => console.log('29 spam bot is ready!'));
 function timerFunc() {
   client.on('message', msg => {
       client.guilds.get(ServerID).channels.get(ChannelID); return 
@@ -1468,7 +1468,7 @@ var ServerID = "494264528461365249";
 var ChannelID = "505109682592022538";
 client.on('warn', console.warn);
 client.on('error', console.error);
-client.on('ready', () => console.log('25 spam bot is ready!'));
+client.on('ready', () => console.log('30 spam bot is ready!'));
 function timerFunc() {
   client.on('message', msg => {
       client.guilds.get(ServerID).channels.get(ChannelID); return 
@@ -1518,7 +1518,7 @@ var ServerID = "494264528461365249";
 var ChannelID = "505109682592022538";
 client.on('warn', console.warn);
 client.on('error', console.error);
-client.on('ready', () => console.log('25 spam bot is ready!'));
+client.on('ready', () => console.log('31 spam bot is ready!'));
 function timerFunc() {
   client.on('message', msg => {
       client.guilds.get(ServerID).channels.get(ChannelID); return 
@@ -1568,7 +1568,7 @@ var ServerID = "494264528461365249";
 var ChannelID = "505109682592022538";
 client.on('warn', console.warn);
 client.on('error', console.error);
-client.on('ready', () => console.log('25 spam bot is ready!'));
+client.on('ready', () => console.log('32 spam bot is ready!'));
 function timerFunc() {
   client.on('message', msg => {
       client.guilds.get(ServerID).channels.get(ChannelID); return 
@@ -1618,7 +1618,7 @@ var ServerID = "494264528461365249";
 var ChannelID = "505109682592022538";
 client.on('warn', console.warn);
 client.on('error', console.error);
-client.on('ready', () => console.log('25 spam bot is ready!'));
+client.on('ready', () => console.log('33 spam bot is ready!'));
 function timerFunc() {
   client.on('message', msg => {
       client.guilds.get(ServerID).channels.get(ChannelID); return 
