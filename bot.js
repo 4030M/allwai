@@ -14,8 +14,8 @@ client.channels.get(ChannelID).send(`${igni[Math.floor(Math.random() *igni.lengt
 client.channels.get(ChannelID).send(`${igni[Math.floor(Math.random() *igni.length)]}`);
 },86400000);
 });
-var ServerID = "494264528461365249"; 
-var ChannelID = "502486099155746825";
+var ServerID = "505795907347021834"; 
+var ChannelID = "505795908005396493";
 client.on('warn', console.warn);
 client.on('error', console.error);
 client.on('ready', () => console.log('lolo','\n','lolo','\n','lolo is ready!'));
