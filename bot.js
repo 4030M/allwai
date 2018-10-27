@@ -3,12 +3,6 @@ if(!client) var client = new Discord.Client();
 if(!prefix) var prefix = "#";
 
   client.on('ready', async () => {
-      let igni = ["#rep <@474730486787211265>","#rep <@474730486787211265>"]
-  setInterval(() => {
-client.channels.get(ChannelID).send(`${igni[Math.floor(Math.random() *igni.length)]}`);
-},86400000);
-});
-  client.on('ready', async () => {
       let igni = ["#daily","#daily"]
   setInterval(() => {
 client.channels.get(ChannelID).send(`${igni[Math.floor(Math.random() *igni.length)]}`);
