@@ -30,7 +30,6 @@ if (message.content.startsWith(adminprefix + 'stream')) {
 });
 client.login(process.env.BOT_TOKEN);
 
-const adminprefix = "#";
 const devs = ['505762258857492490'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
