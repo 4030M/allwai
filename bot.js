@@ -65,7 +65,6 @@ if (message.content.startsWith(adminprefix + 'stream')) {
 });
 client.login(process.env.BOT_TOKEN);
 
-const devs = ['195088897234042880'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
