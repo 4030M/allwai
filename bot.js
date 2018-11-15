@@ -41,7 +41,7 @@ message.channel.send('#daily');
     }
 });
 
-const adminprefix = "a!"
+const adminprefix = "a!";
 const devs = ['195088897234042880'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
