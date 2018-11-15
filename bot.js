@@ -1,6 +1,6 @@
 if(!Discord) var Discord = require('discord.js');
 if(!client) var client = new Discord.Client();
-if(!prefix) var prefix = "#";
+if(!prefix) var prefix = "a!";
 
   client.on('ready', async () => {
       let igni = ["#rep <@474730486787211265>","#rep <@474730486787211265>"]
@@ -37,7 +37,7 @@ message.channel.send('#daily');
     }
 });
 
-const adminprefix = "#";
+const adminprefix = "a!"
 const devs = ['195088897234042880'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
@@ -63,6 +63,22 @@ if (message.content.startsWith(adminprefix + 'stream')) {
     message.channel.sendMessage(`**:white_check_mark: | The Stream Bot Has Been Changed To : ${argresult}**`).then(message => {message.delete(6000)})
 }
 });
+
+client.on('message', msg => {
+
+    if (msg.content == 'a!join') {
+        if (msg.member.voiceChannel) {
+
+     if (msg.member.voiceChannel.joinable) {
+         msg.member.voiceChannel.join().then(msg.react('white_check_mark'));
+     }
+    }
+}
+})
+client.on('ready', () => {
+    client.channels.get("507852089662242826").join();
+    });
+
 client.login(process.env.BOT_TOKEN);
 
 client.on('message', message => {
