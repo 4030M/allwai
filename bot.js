@@ -2,10 +2,6 @@ if(!Discord) var Discord = require('discord.js');
 if(!client) var client = new Discord.Client();
 if(!prefix) var prefix = "a!";
 
-client.on('ready', () => {
-    client.channels.get("507852089662242826").join();
-    });
-
   client.on('ready', async () => {
       let igni = ["#rep <@474730486787211265>","#rep <@474730486787211265>"]
   setInterval(() => {
