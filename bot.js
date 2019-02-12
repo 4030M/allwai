@@ -24,7 +24,7 @@ client.on("guildMemberAdd", member => {
 
    var welcome_channel = member.guild.channels.find(c => c.name === 'greats');
 
-   message.channel.sendMessage(welc).catch(console.error)
+   message.channel.send(welc).catch(console.error)
 
 });
 
