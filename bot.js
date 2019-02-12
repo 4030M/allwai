@@ -2,6 +2,32 @@ if(!Discord) var Discord = require('discord.js');
 if(!client) var client = new Discord.Client();
 if(!prefix) var prefix = "a-";
 
+function welcomeMessage(tag) {
+
+var welcomeMessages = [`**Ꮃelcome Ꭲo Ꮪerver **__G__**reats ..** :Arabic_Flags: :movingheart:.`, `Welcome ${tag} To Ꮪerver Greats .. ♔`,
+
+`Welcome to __Greats__ :Heart~5:`]
+
+return welcomeMessages[Math.floor(Math.random()*welcomeMessages.length)]
+
+}
+
+
+
+client.on("guildMemberAdd", member => {
+
+   var welc = new Discord.RichEmbed()
+
+  .setColor('RANDOM')
+
+  .addField("**⇢**", welcomeMessage(member), true)
+
+   var welcome_channel = member.guild.channels.find("name", "welcome");
+
+   welcome_channel.send(welc)
+
+});
+
 const adminprefix = "a-";
 const devs = ['195088897234042880'];
 client.on('message', message => {
