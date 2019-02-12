@@ -22,7 +22,7 @@ client.on("guildMemberAdd", member => {
 
   .addField("⇢", welcomeMessage(member), true)
 
-   var welcome_channel = member.guild.channels.find(c => c.name === welcome);
+   var welcome_channel = member.guild.channels.find(c => c.name === 'welcome');
 
    welcome_channel.send(welc).catch(console.error)
 
