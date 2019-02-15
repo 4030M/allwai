@@ -2,18 +2,18 @@ if(!Discord) var Discord = require('discord.js');
 if(!client) var client = new Discord.Client();
 if(!prefix) var prefix = "a-";
 
-//function welcomeMessage(tag) {
-//var welcomeMessages = [`**Ꮃelcome Ꭲo Ꮪerver **__G__**reats ..** :Arabic_Flags: :movingheart:.`, `Welcome ${tag} To Ꮪerver Greats .. ♔`,
-//`Welcome to __Greats__ :Heart~5:`]
-//return welcomeMessages[Math.floor(Math.random()*welcomeMessages.length)]
-//}
-//client.on("guildMemberAdd", member => {
-   //var welc = new Discord.RichEmbed()
-  //.setColor('RANDOM')
-  //.addField("⇢", welcomeMessage(member), true)
-   //var welcome_channel = member.guild.channels.find(c => c.name === 'greats');
-   //message.channel.send(welc).catch(console.error)
-//});
+function welcomeMessage(tag) {
+
+var welcomeMessages = [`**Ꮃelcome Ꭲo Ꮪerver Greats .. ♔**`, `**Ꮃelcome Ꭲo Ꮪerver **__G__**reats** 💛`,
+`**Ꮃelcome Ꭲo Ꮪerver Greats! 🎻**`, `**Welcome to Greatss 🍁**`, `**- Welcome to Server __G__reats 🎶**`]
+return welcomeMessages[Math.floor(Math.random()*welcomeMessages.length)]
+}
+
+client.on("guildMemberAdd", member => {
+  let wchannel = member.guild.channels.get('498298209706442752');
+  if(!wchannel) return;
+   wchannel.send(welcomeMessage(member))
+});
 
 const adminprefix = "a-";
 const devs = ['195088897234042880'];
