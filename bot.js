@@ -12,7 +12,9 @@ return welcomeMessages[Math.floor(Math.random()*welcomeMessages.length)]
 client.on("guildMemberAdd", member => {
   let wchannel = member.guild.channels.get('498298209706442752');
   if(!wchannel) return;
+setTimeout(() => {
    wchannel.send(welcomeMessage(member))
+}, 1000)
 });
 
 const adminprefix = "a-";
